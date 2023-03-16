@@ -1,0 +1,152 @@
+
+
+
+body{
+    background-image: url(imagenes/fondofff.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+
+    
+    
+}
+
+
+header{
+    
+    background-image: url(imagenes/fondopincel2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+
+
+nav{
+    padding: 3%;
+    
+}
+
+
+.titulo{
+    color: #0c021b;
+    padding: 85px;
+}
+
+.section1{
+   
+   background-color: #ffffff;
+   padding: 5%;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin: 10%;
+   border-radius: 40px;
+   
+}
+
+
+.video1{
+    
+}
+
+
+
+.texto1{
+    color: #09011a;
+}
+
+.div1{
+    position: relative;
+    justify-content:flex-start;
+}
+
+
+
+
+
+label{
+     display: block;
+     padding: 7px;
+     border-radius: 7px;
+     cursor: pointer;
+     border: 1px dashed #ccc;
+     margin-bottom: 3px;
+
+}
+
+label:hover{
+    background: #cec0fc;
+
+
+}
+button{
+    width: 15%;
+    display:  block;
+    margin: auto;
+    padding: 10px;
+    
+    background-color: #a4bbfd;
+    border: none;
+    border-radius: 20px;
+}
+
+button:hover{
+    background: #000;
+    color: #fff;
+
+}
+
+h2{
+    text-align: center;
+    color: #dad9be;
+
+
+}
+
+#resultado{
+    font-size: 30px;
+    color: darkred;
+}
+
+
+.section2{
+
+   background-color: #fff;
+   padding: 5%;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin: 10%;
+   border-radius: 40px;
+
+}
+
+
+.video2{
+    width: 650px;
+    height: 380px;
+    
+}
+
+.video3{
+    width: 650px;
+    height: 380px;
+    
+}
+
+.video4{
+    width: 650px;
+    height: 380px;
+    
+}
+
+footer{
+    background-color: #070a2e;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:1%;
+}
+
+@media (min-width: 800px){ 
+
+
+}
+

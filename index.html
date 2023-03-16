@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="style.css" >
+    <title>Proyecto final</title>
+    
+
+</head>    
+<body>
+    <header    class="header" style="text-align: center;"> 
+    <nav>
+    
+    <h1 class="display-2" >Artística</h1>
+    <h3 class="display-8"  style="color: rgb(46, 98, 158);" >Artes plásticas - Educación musical - Artes escénicas</h3>
+
+   </nav>
+    </header>
+
+    <main>
+        <div class="div1">
+        <section class="section1"> 
+            <h1    class="display-5" style="color: rgb(3, 16, 27);">¿Que es la educación artística?</h1>
+            <article class="texto1">
+                <p  class="read"    >Los términos educación artística,
+                     pedagogía del arte, enseñanza del arte, 
+                     aprendizaje del arte, enseñanza de las artes 
+                     o alguna otra combinación son denominaciones 
+                     para las diferentes modalidades y metodologías de enseñanza y 
+                     aprendizaje del arte o las distintas artes y las instituciones relacionadas.
+
+                    Las principales divisiones de este campo son la educación plástica y visual,
+                    la pedagogía musical o educación musical (de la música) y la educación expresiva 
+                    del cuerpo (de la expresión corporal y las artes escénicas -mímica, danza, teatro, 
+                    artes circenses, etc.). 
+                    Los profesionales del arte o «artistas» suelen destacar específicamente en 
+                    alguna de ellas por sus condiciones naturales o «talento artístico»; sin embargo, 
+                    como en toda profesión o actividad humana, se requiere de entrenamiento, estudio y constante actualización. 
+                    Los estudiantes de las distintas disciplinas artísticas pueden especializarse de
+                    forma extrema en una sola para alcanzar el virtuosismo o buscar su capacitación en otras,
+                    bien próximas o bien muy diferentes, formándose en nuevas manifestaciones artísticas y pedagógicas,
+                    con el fin de lograr un amplio panorama del campo de la expresión artística.</p>
+            </article>
+        </section>
+        
+             <center><video  autoplay  class="video1" src="Educación artística 🎨 __ ¿Qué es educación artística_, ¿Qué implica_ 🤔.mp4" type="video"  controls >
+             </video></center>
+             
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagenes/ca2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/ca3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/ca4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/ca5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagenes/ca6.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    
+          
+    
+       <div class="container1">
+          <section class="section1"    id="p2">
+                <h1>Realiza tu Quiz sobre grandes Artístas y grandes obras</h1>
+              <h3>¿Quién pintó La última cena durante un período de tres años entre 1495 y 1498?</h3>
+
+                <label>
+                    <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">Michaelangelo
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Leonardo da Vinci
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">Botticelli
+                </label>
+            </section>
+
+            <section  class="section1" id="p1">
+                <h3>¿Qué artista es famoso por sus coloridas representaciones de la vida nocturna de París?</h3>
+  
+                  <label>
+                      <input type="radio" value="1" name="p1"   onclick="respuesta(1,this)">Manet
+                  </label>
+                  <label>
+                      <input type="radio" value="2" name="p1"  onclick="respuesta(1,this)">Toulouse-Lautrec
+                  </label>
+                  <label>
+                      <input type="radio" value="3" name="p1"  onclick="respuesta(1,this)">Dubuffet
+                  </label>
+              </section>
+
+              <section  class="section1"  id="p3">
+                <h3>¿Qué artista envolvió en tela el edificio del Reichstag de Berlín como expresión de su arte en 1995?</h3>
+  
+                  <label>
+                      <input type="radio" value="1" name="p3"  onclick="respuesta(3,this)">Chrystal
+                  </label>
+                  <label>
+                      <input type="radio" value="2" name="p3"  onclick="respuesta(3,this)">Cisco
+                  </label>
+                  <label>
+                      <input type="radio" value="3" name="p3"  onclick="respuesta(3,this)">Christo
+                  </label>
+              </section>  
+              
+              <button   onclick="corregir()">Corregir</button>
+              <h2>Cantidad acertadas: <span  id="resultado"></span></h2>
+
+        </div>
+        <script src="main.js"></script>
+
+
+        <section class="section2">
+            <h3>Artes plásticas</h3>
+            <article   class="articulo2">
+                <p>Las artes plásticas son aquellas artes que utilizan 
+                    materiales capaces de ser modificados o moldeados por 
+                    el artista mediante distintas técnicas para crear una obra.
+                    Son aquellas manifestaciones del ser humano que reflejan,
+                    con recursos plásticos, algún producto de su imaginación 
+                    o su visión de la realidad. Se refiere el término de manera 
+                    más amplia a las artes visuales para diferenciarlas del arte
+                    musical, de la danza, la literatura o del teatro.
+    
+                    Incluidas dentro de las bellas artes, el término
+                    'artes plásticas' aparece a principios del siglo xix
+                    para referirse a la pintura, la escultura, el dibujo, 
+                    la arquitectura, el grabado, la cerámica, la orfebrería, 
+                    la artesanía y la pintura mural.</p>
+
+                    <center>
+                    <h5>Curso 1 - Taller básico artes plásticas</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TH8MtZRtBTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </center>
+                    <br>
+            </article>
+            <br>
+
+            <h3>Educación Músical</h3>
+            <article>
+                <p>La pedagogía musical trata la relación entre la música y el ser humano.
+                    En las civilizaciones más antiguas (India, China,
+                    Egipto y en tantas otras no documentadas),
+                    la música estaba ligada a funciones de gran importancia
+                    en las ceremonias; su enseñanza estaba controlada por 
+                    las más altas autoridades civiles o religiosas. 
+                    Las perspectivas de la educación, de la formación, 
+                    de la enseñanza y del aprendizaje forman parte de la pedagogía musical. 
+                    En la pedagogía musical debe distinguirse la enseñanza teórica de la enseñanza práctica.</p>
+
+
+                    <center>
+                        <h5>Curso 2 - Taller básico técnica vocal</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cvbpOa9ZZZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </center>
+
+                    <br>
+            </article>
+            <br>
+
+            <h3>Artes escénicas</h3>
+            <article>
+                <p>Las artes escénicas son aquellas manifestaciones artísticas
+                    creadas para ser representadas sobre un escenario.
+                    Aunque son fundamentalmente tres disciplinas artísticas
+                    las que son representadas en las artes escénicas (teatro, danza y música)
+                    estas a su vez se subdividen o se conjugan en otras tantas, como por ejemplo la ópera,
+                    la zarzuela, el teatro musical, el performance, el cabaret, el recital, los guiñoles,
+                    los títeres o el circo, entre otros. El escenario, por su parte, puede estar en construcciones destinadas
+                    especialmente para ello, como teatros, salas de espectáculos y salas de usos múltiples, 
+                    o bien pueden aprovechar espacios urbanísticos o arquitectónicos de carácter público, como ocurre en los espectáculos callejeros 
+                    como el circo o la comedia del arte. Incluso formas no artísticas como los desfiles, procesiones religiosas,
+                    fiestas populares o carnavales tienen una dimensión escénica muy clara y a menudo son tomados en cuenta por las artes escénicas.</p>
+                    
+                    <center>
+                    <h5>Curso 3 - Taller básico artes escénicas</h5>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/whY74an81ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </center>
+                    
+                    <br>
+            </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+</main>
+<footer>
+    <h3  style="color: rgb(255, 255, 255);">Materia - Artística</h3>
+    <p  style="color: rgb(228, 252, 162);"  class="display-8">Realizado por:  Luz Daniela Romero Chapuel</p>
+    
+    
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>  
+</body>
+</html>
